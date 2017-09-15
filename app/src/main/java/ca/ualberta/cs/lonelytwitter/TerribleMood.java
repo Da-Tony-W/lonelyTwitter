@@ -11,6 +11,10 @@ public class TerribleMood extends Mood{
         super(MyMood, date);
     }
 
+    public TerribleMood(String MyMood) {
+        super(MyMood);
+    }
+
     @Override
     public Boolean isHappy(){
         return Boolean.TRUE;

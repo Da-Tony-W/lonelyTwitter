@@ -10,8 +10,8 @@ public abstract class Mood {
     private Date date;
     private String MyMood;
 
-    public Mood(){
-        this.date = new Date();
+    public Mood(String MyMood){
+        this.MyMood = MyMood;
 
     }
 

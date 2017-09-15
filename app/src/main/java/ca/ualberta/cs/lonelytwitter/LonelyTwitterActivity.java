@@ -42,6 +42,10 @@ public class LonelyTwitterActivity extends Activity {
 				Tweet tweet = new ImportantTweet("");
 				NormalTweet tweet1 = new NormalTweet("");
 
+
+                Mood tweetMood = new HappyMood("");
+                TerribleMood tweetmMood1 = new TerribleMood("");
+
 				try {
 					tweet.setMessage("Hello");
 				} catch (TweetTooLongException e) {
@@ -59,6 +63,11 @@ public class LonelyTwitterActivity extends Activity {
 				ArrayList<Tweetable> tweetables = new ArrayList<Tweetable>();
 				tweetables.add(tweet);
 				tweetables.add(tweet1);
+
+                ArrayList<Mood> tweetmoods = new ArrayList<Mood>();
+                tweetmoods.add(tweetMood);
+                tweetmoods.add(tweetmMood1);
+
 
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
